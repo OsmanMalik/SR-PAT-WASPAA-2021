@@ -8,7 +8,7 @@
 f1 = figure;
 plot_circ = true;
 
-if false
+if plot_circ
     load N_gen_101_N_rec_81_r_3_circ
     load('kWave_recon_circular')
 else
