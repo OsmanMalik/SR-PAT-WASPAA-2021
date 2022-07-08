@@ -7,10 +7,9 @@ This repo contains the code we used to run the experiments in our paper
 > **IEEE Workshop on Applications of Signal Processing to Audio and Acoustics (WASPAA)**,
 > pp. 141-145, 2021.
 
-The paper is available [IEEE Xplore](https://doi.org/10.1109/WASPAA52581.2021.9632758) and [arXiv](https://arxiv.org/abs/2105.03809). 
-The code can be used to recreate the following plots which appear as Figures 3-5 in the paper.
+The paper is available on [IEEE Xplore](https://doi.org/10.1109/WASPAA52581.2021.9632758) and [arXiv](https://arxiv.org/abs/2105.03809). 
+The code can be used to recreate Figures 3-5 in the paper.
 
-[add figs]
 
 ## Referencing this code
 
@@ -33,7 +32,7 @@ If you use this code in any of your own work, please reference our paper:
 In order to run the k-Wave reconstructions, the k-Wave toolbox for Matlab is required.
 It is available for free on the [k-Wave website](http://www.k-wave.org/).
 
-Please let me know if you run into any Matlab compatibility. 
+Please let me know if you run into any Matlab compatibility issues. 
 I'm able to run this in Matlab R2021b, so that version or a newer one should run fine.
 
 
@@ -59,11 +58,20 @@ Note that these scripts require k-Wave; see the Requirements heading above.
 These two scripts use an average signal and the transducer positions generated in `waspaa_experiments.m`, so it's important that step 1 is done before this step.
 
 3. Run `plot_waspaa_experiments_speckles.m` to recreate the plot in Figure 3.
+The figure below shows an example.
+Since the speckle patterns are random, they won't look exactly like in the paper.
+
+![Speckle patterns](speckle_patterns.png)
 
 4. Run `plot_waspaa_experiments.m` to recreate the plots in Figures 4 and 5.
 Setting `plot_circ = false` will generate the plot for the square transducer array (Fig. 4).
 Setting `plot_circ = true` will generate the plot for the circular transducer array (Fig. 5). 
+The two figures below show the recreations of Figures 4 and 5, respectively.
+Again, due to randomness in the speckle patterns, they won't be exactly identical to the ones in the paper.
 
+![Reconstruction square array](recon_square_array.png)
+
+![Reconstruction circular array](recon_circular_array.png)
 
 ## Author contact information
 
